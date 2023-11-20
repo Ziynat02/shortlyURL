@@ -850,7 +850,7 @@ ul li a h5{
   /* end footer */
   
 }
-@media (max-width:375px) {
+@media (max-width:380px) {
   /* start main */
   .short_links {
     position: absolute;
