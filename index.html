@@ -11,139 +11,146 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-      <header>
-        <div class="container">
-          <nav>
-            <div class="navbar">
-              <div class="navbar_left">
-                <div class="logo">
-                  <a href="#">
-                    <img src="./images/logo.svg" alt="logo" />
-                  </a>
-                </div>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="navbar">
+            <div class="navbar_left">
+              <div class="logo">
+                <a href="#">
+                  <img src="./images/logo.svg" alt="logo" />
+                </a>
               </div>
-              <div class="navbar_right">
-                <ul>
-                  <li><a href="#features">Features</a></li>
-                  <li><a href="#pricing">Pricing</a></li>
-                  <li><a href="#resources">Resources</a></li>
-                </ul>
-                <div class="enter">
-                  <a href="#" class="login">Login</a>
-                  <a href="#" class="signUp">Sign Up</a>
-                </div>
+            </div>
+            <div class="navbar_right">
+              <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#resources">Resources</a></li>
+              </ul>
+              <div class="enter">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="signUp">Sign Up</a>
               </div>
-              <i class="menu fa-solid fa-bars"></i>
-          </nav>
-          <div class="burger">
+            </div>
+          </div>
+          <i class="menu fa-solid fa-bars"></i>
+        </nav>
+        <div class="burger">
+          <div class="line"></div>
+        </div>
+        <div class="header_part">
+          <div class="header_left">
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <a href="" class="getStarted"> Get Started</a>
+          </div>
+          <div class="header_right">
+            <img src="./images/illustration-working.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="short_links">
+          <div class="input_link">
+            <label for=""></label>
+            <input
+              type="text"
+              name="text"
+              placeholder=" Shorten a link here..."
+            />
+          </div>
+          <a href="#">Shorten It!</a>
+        </div>
+        <div class="short-urls container" id="shortUrls">
+          <div class="short-url">
+            <h3 id="link">Lorem, ipsum dolor.</h3>
             <div class="line"></div>
-          </div>
-          <div class="header_part">
-            <div class="header_left">
-              <h1>More than just shorter links</h1>
-              <p>
-                Build your brand’s recognition and get detailed insights on how
-                your links are performing.
-              </p>
-              <a href="" class="getStarted"> Get Started</a>
-            </div>
-            <div class="header_right">
-              <img src="./images/illustration-working.svg" alt="" />
+            <div class="link-btn">
+              <h3 class="blue-link" id="shortLink">
+                <a href="#">Lorem, ipsum dolor.</a>
+              </h3>
+              <button class="btn" id="copyBtn">Copy</button>
             </div>
           </div>
         </div>
-      </header>
-      <main>
-        <div class="container">
-          <div class="short_links">
-            <div class="input_link">
-              <label for=""></label>
-              <input
-                type="text"
-                name="text"
-                placeholder=" Shorten a link here..."
-              />
-            </div>
-            <a href="#">Shorten It!</a>
+        <div class="advanced_part">
+          <div class="advanced_text">
+            <h2>Advanced Statistics</h2>
+            <p>
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
           </div>
-          <div class="short-urls container" id="shortUrls">
-            <div class="short-url">
-              <h3 id="link">Lorem, ipsum dolor.</h3>
-              <div class="line"></div>
-              <div class="link-btn">
-                <h3 class="blue-link" id="shortLink">
-                  <a href="#">Lorem, ipsum dolor.</a>
-                </h3>
-                <button class="btn" id="copyBtn">Copy</button>
+          <div class="cards">
+            <div class="card brand">
+              <div class="img">
+                <img src="./images/icon-brand-recognition.svg" alt="brand" />
               </div>
-            </div>
-          </div>
-          <div class="advanced_part">
-            <div class="advanced_text">
-              <h2>Advanced Statistics</h2>
+              <h4>Brand Recognition</h4>
               <p>
-                Track how your links are performing across the web with our
-                advanced statistics dashboard.
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
               </p>
             </div>
-            <div class="cards">
-              <div class="card brand">
-                <div class="img">
-                  <img src="./images/icon-brand-recognition.svg" alt="brand" />
-                </div>
-                <h4>Brand Recognition</h4>
-                <p>
-                  Boost your brand recognition with each click. Generic links
-                  don’t mean a thing. Branded links help instil confidence in
-                  your content.
-                </p>
+            <div class="border"></div>
+            <div class="card detailed">
+              <div class="img">
+                <img src="./images/icon-detailed-records.svg" alt="brand" />
               </div>
-              <div class="border"></div>
-              <div class="card detailed">
-                <div class="img">
-                  <img src="./images/icon-detailed-records.svg" alt="brand" />
-                </div>
-                <h4>Detailed Records</h4>
-                <p>
-                  Gain insights into who is clicking your links. Knowing when
-                  and where people engage with your content helps inform better
-                  decisions.
-                </p>
+              <h4>Detailed Records</h4>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="card fully">
+              <div class="img">
+                <img src="./images/icon-fully-customizable.svg" alt="brand" />
               </div>
-              <div class="card fully">
-                <div class="img">
-                  <img src="./images/icon-fully-customizable.svg" alt="brand" />
-                </div>
-                <h4>Fully Customizable</h4>
-                <p>
-                  Improve brand awareness and content discoverability through
-                  customizable links, supercharging audience engagement.
-                </p>
-              </div>
+              <h4>Fully Customizable</h4>
+              <p>
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
             </div>
           </div>
         </div>
-        <div class="boost ">
-          <h2>Boost your links today</h2>
-          <a href="#" class="getStarted">Get Started</a>
-        </div>
-      </main>
-      <footer>
-        <div class="container">
-          <div class="froote_part">
-            <div class="logo">
-              <a href="">
-                <h2>shortly</h2>
-              </a>
-            </div>
-           <div class="adress">
+      </div>
+      <div class="boost">
+        <h2>Boost your links today</h2>
+        <a href="#" class="getStarted">Get Started</a>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="froote_part">
+          <div class="logo">
+            <a href="">
+              <h2>shortly</h2>
+            </a>
+          </div>
+          <div class="adress">
             <ul>
               <li>
                 <a href="#"><h5>Features</h5></a>
@@ -175,17 +182,19 @@
               <i class="fa-brands fa-pinterest"></i>
               <i class="fa-brands fa-instagram"></i>
             </div>
-           </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <script src="./script.js"></script>
+        <!-- </div> -->
+      </div>
+    </footer>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/Ziynat02" target="_blank">Imomqulova Ziynat</a>.
+      >. Coded by
+      <a href="https://github.com/Ziynat02" target="_blank">Imomqulova Ziynat</a
+      >.
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -797,6 +797,13 @@ ul li a h5 {
   header {
     margin-top: 5rem;
   }
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar .hide{
+    display: none;
+  }
   .menu {
     display: block;
     width: 4rem;
@@ -815,6 +822,10 @@ ul li a h5 {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    /* display: none; */
+  }
+  .navbar .hide{
+    display: none;
   }
   .navbar .navbar_right ul{
     display: flex;
@@ -836,10 +847,10 @@ ul li a h5 {
     top: 5rem;
     right: 1.3rem;
   }
-  .burger.navbar_right{
+  /* .burger.navbar_right{
     display: block;
     z-index: 11;
-  } 
+  }  */
    .burger .line{
     z-index: 10;
     width: 30rem;

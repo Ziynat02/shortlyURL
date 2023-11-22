@@ -7,13 +7,13 @@ let menu = document.querySelector(".menu");
 let navbar_right = document.querySelector(".navbar_right");
 let navbar_li = document.querySelector(".navbar_right ul li a");
 
-navbar_li.addEventListener("click",()=>{
- 
-});
+navbar_li.addEventListener("click", () => {});
 
-menu.addEventListener("click",()=>{
-   burger.classList.toggle("burger");
- 
+menu.addEventListener("click", () => {
+  burger.classList.toggle("burger");
+});
+menu.addEventListener("click", () => {
+  navbar_right.classList.toggle("hide");
 });
 
 async function copyContent(text) {
