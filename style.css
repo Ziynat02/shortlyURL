@@ -20,8 +20,7 @@ html {
 }
 body {
   position: relative;
-  overflow-x: hidden;
-  /* padding: 1rem; */
+  overflow-x: hidden; 
 }
 .attribution {
   position: absolute;
@@ -51,16 +50,22 @@ header nav .navbar {
   justify-content: space-between;
   align-items: center;
 }
-.navbar .navbar_left {
+ .navbar .navbar_right {
   display: flex;
-  gap: 5.5rem;
+  gap: 44rem;
   align-items: center;
-}
-.navbar_left ul {
+} 
+.navbar_right ul {
   display: flex;
-  gap: 4.8rem;
+  gap: 5rem;
   list-style: none;
   align-items: center;
+}
+.navbar_right .enter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
 }
 a {
   text-decoration: none;
@@ -69,13 +74,13 @@ a {
 .navbar_left .logo a img {
   width: 100%;
 }
-.navbar_left ul li a {
+.navbar_right ul li a {
   font-size: 1.5rem;
   color: var(--GrayishViolet);
   font-weight: 600;
   transition: all .5s;
 }
-.navbar_left ul li a:hover {
+.navbar_right ul li a:hover {
   color: var(--VeryDarkBlue);
 }
 .navbar_right {
@@ -87,6 +92,7 @@ a {
   color: var(--GrayishViolet);
   font-size: 1.5rem;
   font-weight: 600;
+  transition: all .5s;
 }
 .navbar_right .login:hover {
   color: var(--VeryDarkBlue);
@@ -96,7 +102,7 @@ a {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 0.8rem 2.2rem;
+  padding: 1.1rem 2.5rem;
   border-radius: 24px;
   transition: all .5s;
 }
@@ -132,7 +138,7 @@ a {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
-  padding: 1.1rem 3rem;
+  padding: 1.4rem 3.5rem;
   border-radius: 24px;
   background: var(--Cyan);
   transition: all .5s;
@@ -144,9 +150,9 @@ a {
   width: 50%;
 }
 .header_right img {
-  width: 120%;
+  max-width:110%;
   z-index: +1;
-  transform: translateX(10%);
+  transform: translateX(15%);
 }
 /* end header  */
 /* start main */
@@ -227,6 +233,7 @@ main {
   max-width: 43rem;
 }
 .cards {
+  gap: 2rem;
   display: flex;
   margin-top: 12rem;
   justify-content: space-between;
@@ -240,15 +247,15 @@ main {
 .border {
   position: absolute;
   height: 1px;
-  width: 100rem;
+  width: 80rem;
   border: 4px solid var(--Cyan);
-  transform: translateY(2000%);
+  transform: translateY(1960%);
 }
 .detailed {
-  transform: translateY(20%);
+  transform: translateY(15%);
 }
 .fully {
-  transform: translateY(40%);
+  transform: translateY(35%);
 }
 .card .img {
   max-width: 7.5rem;
@@ -356,39 +363,36 @@ ul li a h5 {
 /* responsive */
 @media (min-width: 970px) and (max-width: 1050px) {
   .container {
-    max-width: 95rem;
+    max-width: 91rem;
     margin: 0 auto;
   }
   header {
     margin-top: 6rem;
   }
-  .navbar .navbar_left {
-    gap: 4.5rem;
+  .navbar .navbar_right{
+    gap: 26rem;
   }
   .header_part {
     gap: 5rem;
   }
-  .navbar_left ul {
+  .navbar_right ul {
     gap: 4rem;
   }
   .navbar_left ul li a {
     font-size: 1.3rem;
   }
-  .navbar_right {
-    gap: 4rem;
-  }
   .navbar_right .login {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .navbar_right .signUp {
     font-size: 1.3rem;
-    padding: 0.6rem 2rem;
+    padding: 1rem 2.5rem;
   }
   .navbar_right .signUp:hover {
     background: var(--CyanHover);
   }
   .header_right img {
-    max-width: 60rem;
+    max-width: 115%;
   }
   .header_part {
     margin-top: 4.5rem;
@@ -406,7 +410,7 @@ ul li a h5 {
   .getStarted {
     font-size: 1.3rem;
     font-weight: 600;
-    padding: 0.8rem 2.5rem;
+    padding: 1.4rem 3.5rem;
   }
   /* end header  */
   /* start main */
@@ -420,7 +424,7 @@ ul li a h5 {
     padding: 4rem 3rem;
   }
   .short_links a {
-    width: 11rem;
+    width: 12rem;
     padding: 1.7rem 2rem;
     font-size: 1.3rem;
   }
@@ -441,6 +445,7 @@ ul li a h5 {
   }
   .cards {
     margin-top: 6rem;
+    gap: 2rem;
   }
   .cards .card {
     padding: 2rem 2.5rem 3.5rem 2.5rem;
@@ -500,24 +505,31 @@ ul li a h5 {
 }
 @media (min-width: 750px) and (max-width: 970px) {
   .container {
-    max-width: 73rem;
+    max-width: 72rem;
     margin: 0 auto;
   }
   header {
     margin-top: 6rem;
   }
-  .navbar_left ul {
+ .navbar .navbar_right{
+    display: flex;
+    gap: 11rem;
+  }
+  .navbar_right ul {
     gap: 3.5rem;
   }
-  .navbar_left ul li a {
+  .navbar_right ul li a {
     font-size: 1.3rem;
+  }
+  .enter{
+    gap: 3.5rem;
   }
   .navbar_right .login {
     font-size: 1.3rem;
   }
   .navbar_right .signUp {
     font-size: 1.3rem;
-    padding: 0.6rem 2rem;
+    padding: 1.1rem 2.8rem;
   }
   .header_part {
     gap: 5rem;
@@ -533,12 +545,13 @@ ul li a h5 {
     margin: 2rem 0rem 4rem 0rem;
   }
   .header_right img {
-    max-width: 60rem;
+    max-width: 130%;
+    transform: translateX(1%);
   }
   .getStarted {
     font-size: 1.3rem;
     font-weight: 600;
-    padding: 0.8rem 2.5rem;
+    padding: 1.2rem 3rem;
   }
   /* end header  */
   /* start main */
@@ -551,7 +564,7 @@ ul li a h5 {
     padding: 4rem 3rem;
   }
   .short_links a {
-    width: 120px;
+    width: 13rem;
     padding: 1.7rem 2rem;
     font-size: 1.3rem;
   }
@@ -571,6 +584,8 @@ ul li a h5 {
     padding: 1rem 2rem 3rem 2rem;
   }
   .border {
+    width: 60rem;
+    transform: translateY(2500%);
     border: 3px solid var(--Cyan);
   }
   .card .img {
@@ -602,7 +617,7 @@ ul li a h5 {
     font-size: 2.5rem;
   }
   .adress {
-    gap: 8rem;
+    gap: 7rem;
   }
   ul li a {
     font-size: 1rem;
@@ -622,33 +637,40 @@ ul li a h5 {
 }
 @media (min-width: 500px) and (max-width: 750px) {
   .container {
-    max-width: 49rem;
+    max-width: 46rem;
     margin: 0 auto;
   }
   header {
-    margin-top: 5.5rem;
+    margin-top: 6rem;
   }
   .navbar {
     gap: 2rem;
   }
-  .navbar_left ul {
+  .navbar_right ul {
     gap: 1.5rem;
   }
-  .navbar_left ul li a {
-    font-size: 1rem;
+  .navbar_right ul li a {
+    font-size: 1.1rem;
+  }
+  .enter{
+    display: flex;
+    gap: 10rem;
   }
   .navbar_right .login {
     font-size: 1rem;
   }
-  .navbar_right {
+  .navbar .navbar_right {
     gap: 1rem;
   }
   .navbar_right .signUp {
     font-size: 1rem;
     padding: 0.5rem 1.8rem;
   }
+  .navbar_left .logo a img{
+    width: 9rem;
+  }
   .header_right img {
-    max-width: 34rem;
+    max-width: 150%;
     transform: translateY(1%);
   }
   .header_part {
@@ -689,6 +711,9 @@ ul li a h5 {
     padding: 1.7rem 2rem;
     font-size: 1rem;
   }
+  input{
+    padding: 20rem;
+  }
   .advanced_text h2 {
     width: 35rem;
     margin: 0 auto;
@@ -704,26 +729,30 @@ ul li a h5 {
   }
   .cards {
     margin-top: 6rem;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .cards .card {
-    padding: 0.8rem 1rem 2rem 1rem;
+    padding: 0.5rem .8rem 1.5rem .8rem;
   }
   .border {
+    width: 40rem;
     transform: translateY(2800%);
     border: 2px solid var(--Cyan);
   }
   .card .img {
-    width: 5.5rem;
+    width: 5rem;
     padding: 1rem;
     transform: translateY(-70%);
+  }
+  .card .img img{
+    width: 100%;
   }
   .card h4 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
   .card p {
-    width: 20rem;
+    width: 14rem;
     font-size: 0.9rem;
   }
   .boost {
@@ -739,10 +768,10 @@ ul li a h5 {
     padding: 4rem 0rem 4rem 0rem;
   }
   .logo a h2 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
   .adress {
-    gap: 5rem;
+    gap: 2rem;
   }
   ul li a {
     font-size: 1rem;
@@ -750,7 +779,7 @@ ul li a h5 {
   }
   ul li a h5 {
     margin-bottom: 0.9rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .icons {
     gap: 1.2rem;
@@ -760,30 +789,66 @@ ul li a h5 {
   }
   /* end footer */
 }
-@media (max-width: 499px) and (min-width: 0px) {
+@media (max-width: 500px) and (min-width: 0px) {
   .container {
-    max-width: 47rem;
+    max-width: 34rem;
     margin: 0 auto;
   }
   header {
     margin-top: 5rem;
   }
-  .navbar_left ul {
-    display: none;
-  }
   .menu {
     display: block;
     width: 4rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: var(--Gray);
   }
+  /* nav{
+    display: flex;
+    justify-content: space-between;
+  } */
+  .navbar .navbar_right{
+    z-index: 11;
+    position: absolute;
+    right: 12rem;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .navbar .navbar_right ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+ .navbar_right .enter{
+    flex-direction: column;
+    gap: 2rem;
+  }
+   .burger{
+    z-index: 10;
+    position: absolute;
+    background-color: var(--DarkViolet);
+    width:34.9rem;
+    height: 33rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    top: 5rem;
+    right: 1.3rem;
+  }
+  .burger.navbar_right{
+    display: block;
+    z-index: 11;
+  } 
+   .burger .line{
+    z-index: 10;
+    width: 30rem;
+    height: 1px;
+    border: .1px solid var(--Gray);
+    transform: translate(8.5%, 18rem);
+  } 
   .navbar_left .logo a img {
     width: 80%;
-  }
-  /* .navbar_left ul li a {
-    font-size: 1rem;
-  } */
-  .navbar_right {
-    display: none;
   }
   .header_part {
     flex-wrap: wrap;
@@ -812,10 +877,10 @@ ul li a h5 {
     background: var(--CyanHover);
   }
   .header_right img {
-    max-width: 20rem;
+    max-width: 40rem;
     position: relative;
     z-index: +1;
-    transform: translateX(2%);
+    transform: translateX(-4%);
   }
   /* end header  */
   /* start main */
@@ -874,9 +939,9 @@ ul li a h5 {
   .border {
     z-index: -1;
     position: absolute;
-    height: 60rem;
+    height: 65rem;
     width: 0.5px;
-    transform: translateX(15rem);
+    transform: translateX(16rem);
     border: 3px solid var(--Cyan);
   }
   .card .img {
@@ -886,7 +951,7 @@ ul li a h5 {
     align-items: center;
     justify-content: center;
     position: absolute;
-    transform: translate(150%, -160%);
+    transform: translate(170%, -130%);
     background-color: var(--DarkViolet);
     padding: 1.5rem;
     border-radius: 50%;
@@ -935,6 +1000,7 @@ ul li a h5 {
   .froote_part {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
   }
   .logo a h2 {
     max-width: 100%;
@@ -949,7 +1015,7 @@ ul li a h5 {
     /* flex-wrap: wrap; */
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     margin: 0 auto;
   }
   .adress ul {
@@ -997,21 +1063,22 @@ ul li a h5 {
     margin-top: 2rem;
   }
   .short-urls a {
-    color: #2bd1d1;
+    color: var(--Cyan);
     margin-top: 2rem;
   }
   
   .btn {
-    background-color: #2bd1d1;
+    background-color: var(--Cyan);
     color: #fff;
     padding: 1rem 5rem;
     width: 100%;
     border-radius: 10px;
     margin-top: 2rem;
     border: none;
+    transition: all .5s;
   }
   
   .btn:hover {
-    background-color: #9CE2E0;
+    background-color: var(--CyanHover);
   }
 }

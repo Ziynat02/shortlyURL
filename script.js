@@ -2,6 +2,19 @@ let copyBtn = document.getElementById("copyBtn");
 let link = document.getElementById("link");
 let shortLink = document.getElementById("shortLink");
 let shortUrls = document.getElementById("shortUrls");
+let burger = document.querySelector(".burger");
+let menu = document.querySelector(".menu");
+let navbar_right = document.querySelector(".navbar_right");
+let navbar_li = document.querySelector(".navbar_right ul li a");
+
+navbar_li.addEventListener("click",()=>{
+ 
+});
+
+menu.addEventListener("click",()=>{
+   burger.classList.toggle("burger");
+ 
+});
 
 async function copyContent(text) {
   try {
